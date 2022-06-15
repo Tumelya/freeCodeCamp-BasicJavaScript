@@ -1,6 +1,5 @@
 function chainToSwitch(val) {
     let answer = "";
-    // Only change code below this line
   
     /*if (val === "bob") {
       answer = "Marley";
@@ -30,8 +29,6 @@ function chainToSwitch(val) {
       case 7:
         answer = "Ate Nine";
   }
-  
-    // Only change code above this line
     return answer;
   }
   
