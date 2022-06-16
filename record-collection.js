@@ -20,13 +20,13 @@ const recordCollection = {
 
 function updateRecords(records, id, prop, value) {
     if (prop !== "tracks" && value !== "") {
-        records[id][prop] = value;
+        records[id][prop] = value; //update album's prop to value
     } else if (prop === "tracks" && records[id].hasOwnProperty("tracks") === false) {
-        records[id][prop] = [value];
+        records[id][prop] = [value]; //create an empty array and add value to it
     } else if (prop === "tracks" && value !== "") {
-        records[id][prop].push(value);
+        records[id][prop].push(value); //add value to the end of the album's existing tracks array
     } else if (value === "") {
-        delete records[id][prop];
+        delete records[id][prop]; //delete the given prop property from the album
     }
     return records;
 }
